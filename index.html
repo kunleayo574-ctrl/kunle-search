@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kunle Search</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <span>Kunle</span> Search
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <h1>What do you want to search?</h1>
+
+            <p>
+                Search anything and find it quickly on YouTube.
+            </p>
+
+            <form id="searchForm">
+
+                <div class="search-container">
+
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Search anything..."
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit">
+                        🔍 Search
+                    </button>
+
+                </div>
+
+            </form>
+
+            <div class="quick-searches">
+                <button onclick="quickSearch('music')">🎵 Music</button>
+                <button onclick="quickSearch('football')">⚽ Football</button>
+                <button onclick="quickSearch('movies')">🎬 Movies</button>
+                <button onclick="quickSearch('gaming')">🎮 Gaming</button>
+                <button onclick="quickSearch('FAHH')">ah FAHH</button>
+
+            </div>
+
+        </section>
+
+        <section id="results" class="results"></section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Kunle Search</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
